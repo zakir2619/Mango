@@ -76,9 +76,14 @@ const Header = () => {
             >
               আমের জাতসমূহ
             </Link>
-            <Link to="/contact" className="text-gray-700 hover:text-green-700 font-medium transition-colors">
-              যোগাযোগ 
+            <Link
+              to="/contact"
+              onClick={() => setIsOpen(false)}
+              className="block px-3 py-3 rounded-xl text-base font-medium text-gray-700 hover:bg-green-50 hover:text-green-700"
+            >
+              যোগাযোগ
             </Link>
+            
             <Link
               to="/order"
               onClick={() => setIsOpen(false)}
