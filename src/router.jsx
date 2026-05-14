@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createHashRouter } from "react-router-dom";
 import FrontEnd from "./Layouts/FrontEnd";
 import Home from "./pages/Home";
 import OrderPage from "./pages/OrderPage";
@@ -6,7 +6,7 @@ import AdminDashboard from "./pages/AdminDashboard";
 import ProductsPage from "./pages/ProductsPage";
 import ContactPage from "./pages/ContactPage";
 
-const router = createBrowserRouter([
+const router = createHashRouter([ 
   {
     path: "/",
     element: <FrontEnd />,
@@ -31,7 +31,8 @@ const router = createBrowserRouter([
         path: "admin",
         element: <AdminDashboard />
       }
-    ]  
+    ]   
   },
 ]);
+
 export default router;
